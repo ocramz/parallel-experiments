@@ -1,6 +1,6 @@
 name:                parallel-experiments
 version:             0.1.0.0
-synopsis:            TODO Initial project template from stack
+synopsis:            Experiments with Haskell multicore parallelism
 description:         Please see README.md
 homepage:            https://github.com/ocramz/parallel-experiments
 license:             BSD3
@@ -12,7 +12,7 @@ category:            Acme
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
-tested-with:         GHC == 7.10.2
+tested-with:         GHC == 8.0.1
 
 library
   default-language:    Haskell2010
@@ -20,6 +20,9 @@ library
   hs-source-dirs:      src
   exposed-modules:     Lib
   build-depends:       base >= 4.7 && < 5
+                     , parallel
+                     , random >= 1.1
+                     , time >= 1.6.0.1
 
 executable parallel-experiments
   default-language:    Haskell2010
@@ -30,6 +33,8 @@ executable parallel-experiments
                      , hspec
                      , parallel
                      , parallel-experiments
+                     , random >= 1.1
+                     , time >= 1.6.0.1
 
 test-suite spec
   default-language:    Haskell2010
@@ -42,6 +47,8 @@ test-suite spec
                      , hspec
                      , parallel
                      , parallel-experiments
+                     , random >= 1.1
+                     , time >= 1.6.0.1
 
 source-repository head
   type:     git

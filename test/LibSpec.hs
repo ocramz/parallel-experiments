@@ -5,6 +5,8 @@ import Test.Hspec
 
 import Control.Parallel
 
+import Data.Time.Clock (diffUTCTime, getCurrentTime, UTCTime)
+
 import Lib 
 
 main :: IO ()
