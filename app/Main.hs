@@ -2,6 +2,8 @@ module Main where
 
 import Lib
 
+import Criterion.Main (defaultMain, bgroup, bench, whnf)
+
 import Data.Time.Clock (diffUTCTime, getCurrentTime)
 import System.Environment (getArgs)
 import GHC.Conc.Sync (getNumCapabilities)
@@ -18,7 +20,7 @@ testFunction :: [Int] -> [Int]
 -- testFunction = sort
 -- testFunction = seqSort
 -- testFunction = parSort
-testFunction = parSort2 3
+testFunction = parSort2 4
 
 -- randomInts :: Int -> StdGen -> [Int]
 -- randomInts k g = let result = take k (randoms g)
