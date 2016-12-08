@@ -3,9 +3,9 @@ module LibSpec where
 import Test.Hspec
 -- import Test.Hspec.QuickCheck
 
-import Control.Parallel
+-- import Control.Parallel
 
-import Data.Time.Clock (diffUTCTime, getCurrentTime, UTCTime)
+-- import Data.Time.Clock (diffUTCTime, getCurrentTime, UTCTime)
 
 import Lib 
 

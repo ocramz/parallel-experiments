@@ -22,7 +22,7 @@ library
   build-depends:       base >= 4.7 && < 5
                      , parallel
                      , random >= 1.1
-                     , time >= 1.6.0.1
+                     -- , time >= 1.6.0.1
 
 executable parallel-experiments
   default-language:    Haskell2010
@@ -32,6 +32,7 @@ executable parallel-experiments
   build-depends:       base
                      , hspec
                      , parallel
+                     , criterion
                      , parallel-experiments
                      , random >= 1.1
                      , time >= 1.6.0.1
@@ -46,6 +47,7 @@ test-suite spec
                      , base
                      , hspec
                      , parallel
+                     , criterion
                      , parallel-experiments
                      , random >= 1.1
                      , time >= 1.6.0.1
